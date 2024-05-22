@@ -10,8 +10,6 @@ from langchain.chains import RetrievalQA
 from langchain.callbacks.manager import CallbackManager
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 
-
-
 class QA:
     def __init__(self, args):
         self.args = args
