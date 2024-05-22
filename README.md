@@ -7,6 +7,7 @@ https://arxiv.org/abs/2005.11401
 
 ## Prerequisites:
 
+Requirements: 8GB RAM
 
 Install ollama:
 ```
