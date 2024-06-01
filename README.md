@@ -5,9 +5,14 @@ This is using Ollama as the inference engine, and it's running the llama3b: 4q_0
 Shoutout to them:
 https://arxiv.org/abs/2005.11401
 
+
+**Requirements**: 
+- 8GB RAM
+- Good enough CPU
+- Lots of patience
+
 ## Prerequisites:
 
-Requirements: 8GB RAM
 
 Install ollama:
 ```
