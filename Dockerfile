@@ -9,16 +9,17 @@ RUN apt-get update && apt-get install -y \
     curl \
     && curl -fsSL https://ollama.com/install.sh | sh
 
+COPY requirements.txt .
+
+RUN  pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-RUN  pip install -r requirements.txt
-
-COPY start.sh /start.sh
-RUN chmod +x /app/start.sh
+COPY start_services.sh /app/start_services.sh
+RUN chmod +x /app/start_services.sh
 
 # Expose the port for Ollama
 EXPOSE 11434
 
-CMD ["/start_services.sh"]
+CMD ["/app/start_services.sh"]
 
